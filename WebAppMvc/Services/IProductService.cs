@@ -6,7 +6,7 @@ namespace WebAppMvc.Services
     {
         IEnumerable<Product> GetAll();
         Product GetById(long id);
-        void Add(Product product);
+        Product Add(Product product);
         void Remove(long id);
     }
 }

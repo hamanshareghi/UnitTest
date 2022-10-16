@@ -9,10 +9,12 @@ namespace WebAppMvc.Services
         {
             _context = context;
         }
-        public void Add(Product product)
+        public Product Add(Product product)
         {
             _context.Products.Add(product);
-            _context.SaveChanges();    
+            _context.SaveChanges();
+            return product;
+
 
         }
 
